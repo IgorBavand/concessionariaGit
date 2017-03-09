@@ -2,8 +2,8 @@
 <meta charset="utf-8">
 <head>
     <title></title>
-    <link rel="stylesheet" href="../concessionaria/bootstrap-3.3.7-dist/css/bootstrap.css">
-    <link rel="stylesheet" href="../concessionaria/style.css">
+    <link rel="stylesheet" href="../concessionaria/css/bootstrap.css">
+    <link rel="stylesheet" href="../concessionaria/css/style.css">
 </head>">
 <body>
     
@@ -51,19 +51,14 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-    <section class="form">
-        <form method="POST" action="#">
-            <label> Login: </label>
-            <input type="email" id="tx_nome" name="tx_nome"  placeholder="Digite seu e-mail" required />
-            <br/>
-            <br/>
-            <label> Senha: </label>
-            <input type="text" id="tx_nome2" name="tx_nome2" value="" placeholder="Digite sua Senha" required />
-            <br/>
-            <br/>
-            <input type="submit" value="Enviar" name="enviar" class="btn btn-primary" />
-        </form>
-    </section>
-    
+    <div class="div">
+        <form action="" class="form">
+    <label for="fname">Email</label>
+    <input type="text" id="email" name="firstname" class="input" placeholder="Digite seu Email" required>
+    <label for="lname">Senha</label>
+    <input type="text" id="password" name="lastname" class="input" placeholder="Digite sua senha" required>
+    <input type="submit" class="btn-primary" value="Entra">
+  </form>
+</div> 
 </body>
 </html>
