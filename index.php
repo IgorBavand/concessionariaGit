@@ -19,6 +19,10 @@
     <link rel="stylesheet" href="css/Style.css">
 
     <link rel="stylesheet" href="css/et-icons.css">
+    
+    
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  
 </head>
 <body>
     <header id="navegacao" class="navbar-fixed-top">
@@ -31,13 +35,15 @@
                     <span class="icon-bar"></span>
                 </button>
                 <div class="navbar-brand">
-                    <a>Tay<span class="Toy">Toy</span></a>
+                    <a href="#"><img class="imglogo" src=img/logo/taytoy_bco.png alt="Logo" width="120" height="50"></a>
                 </div>
             </div>
             <nav class="collapse navegacao navbar-collapse navbar-right" role="navegacao">
                 <ul id="nav" class="nav navbar-nav">
                     <li class="current"><a href="#home" title="Página Inicial">Home</a></li>
-                    <li><a href="#servicos" title="Equipe" current>Serviços</a></li>
+                    <li><a href="#" title="Missão, Visão e Sobre Nós." current>A Empresa</a></li>
+                    <li><a href="#" title="Midia" current>Mídia</a></li>
+                    <li><a href="#servicos" title="Serviços" current>Serviços</a></li>
                     <li><a href="#ofertas" title="Equipe" current>Ofertas</a></li>
                     <li class="admin"><a href="#" data-toggle="modal" data-target="#modal1" class="btn-blue">ADMIN</a></li>
                 </ul>
@@ -52,49 +58,27 @@
                 <li data-target="#home-carousel" data-slide-to="2"></li>
                 <li data-target="#home-carousel" data-slide-to="3"></li>
                 <li data-target="#home-carousel" data-slide-to="4"></li>
+                <li data-target="#home-carousel" data-slide-to="5"></li>
             </ol>
             <div class="carousel-inner">
-                <div class="item active img" style="background-image: url('img/slider/audi.png')">
+                <div class="item active img" style="background-image: url('img/slider/slide-home-fundo-02.png')">
                     <div class="animated bounceInRight">
-                        <div class="container">
-                            <div class="slide slide-01">
-                                    <div class="mask">
-                                        <h1>TayToy</h1>
-                                        <p>Bem vindo a nossa concessionária</p>
-                                        <br>
-                                         <a href="#servicos" class="btn btn-default btn-lg">Saiba Mais</a>
-                                    </div>
-                             </div>
-                        </div>
+                       
                     </div>
                 </div>              
                 <div class="item" style="background-image: url('img/slider/1-fiat-slide.png')">                
                     <div class="carousel-caption">
-                        <div class="animated bounceInDown">
-                            <h2>Chevrolet<br>TayToy</h2>
-                        </div>
                     </div>
                 </div>
 
                 <div class="item" style="background-image: url('img/slider/2-chevrolet-slide.png')">
-                    <div class="carousel-caption">
-                        <div class="animated bounceInUp">
-                            <h2>Ford<br>TayToy</h2>
-                        </div>
                     </div>
                 </div>
                 <div class="item" style="background-image: url('img/slider/3-ford-slide.png')">                 
-                    <div class="carousel-caption">
-                        <div class="animated bounceInUp">
-                            <h2>Toyota<br>TayToy</h2>
-                        </div>
-                    </div>
+                </div>
+                <div class="item" style="background-image: url('img/slider/4-toyota-slide.png')">                 
                 </div>
                 <div class="item" style="background-image: url('img/slider/5-volkswagen-slide.png')">                 
-                    <div class="carousel-caption">
-                        <div class="animated bounceInUp">
-                            <h2>Volkswagen<br>TayToy</h2>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -115,9 +99,9 @@
                 <a href="#" class="close-link"><i class="icon_close_alt2"></i></a>
                 <img id="profile-img" class="profile-img-card" src="img/icons/avatar_2x.png" />
                 <form method="post" class="popup-form">
-                    <input type="emailt" class="form-control" id="nome" placeholder="Email">
+                    <input type="email" class="form-control" id="nome" placeholder="Email" required>
 
-                    <input type="password" class="form-control" id="senha" placeholder="Senha">
+                    <input type="password" class="form-control" id="senha" placeholder="Senha" required>
 
                     <button type="submit" class="butao">Entrar</button>
                 </form>
@@ -161,7 +145,42 @@
         </div>
     </section>
     <section id="ofertas">
+        <div class="container">
         <h2 class="txtserv text-center">Ofertas</h2>
+        <h4 class="text-center">Carros Novos e Seminovos</h4>
+        <br>
+         <div class="btn-group btn-group-justified">
+     <a type="button" href="#" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Carros Novos</a>
+     <a type="button" href="#" class="btn btn-primary">Carros Usados</a>
+     <a type="button" href="#" class="btn btn-primary">Carros para Alugar</a>
+     </div>
+        </div>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Carros Novos</h4>
+        </div>
+        <div class="modal-body">
+            <h4 class="txtserv text-center">Fiat Strada</h4>
+            <center><img src="img/galeria/Fiat-car.png" width="300"></center>
+            <h6 class="txtserv">Descrição:</h6><span></span>
+            <p>Fiat e escolha o que mais tem a ver com você. Segurança, conforto e espaço interno.</p>
+            <h6 class="txtserv" >Preço: <span>R$75.710,00</span></h6>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success">Comprar</button>
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
     </section>
 </body>
 <!-- main jQuery -->

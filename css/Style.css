@@ -207,6 +207,9 @@ header{
     vertical-align: top;
 
 }
+.imglogo{
+    margin-top: -10px;
+}
 /*************************
 *******Slider Carousel******
 **************************/
